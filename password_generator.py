@@ -2,7 +2,7 @@
 import random
 import clipboard
 
-nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", r"!@#$%^&*()\")"
+nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", r"!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ "
 all_chars = nums + upper + lower + chrs
 
 
