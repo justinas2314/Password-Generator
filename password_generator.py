@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 this module is not meant to be imported as the only thing it should do is
 copy the mostly randomly generated password to clipboard
