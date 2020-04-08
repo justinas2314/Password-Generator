@@ -1,23 +1,23 @@
 """
-this module is not meant to be imported as the only thing it should do is
-copy the mostly randomly generated password to clipboard
+This module is not meant to be imported as the only thing it should do is
+copy the mostly randomly generated password to clipboard.
 """
 import random
 import clipboard
 
 
-def main(length):
+def main(length: int):
     """
     this function takes no arguments and returns a "length" letter
     password that fits most site requirements if need be you can replace
     the vars nums, upper, lower and chrs with a *args method
     """
-    nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ",\
-     "abcdefghijklmnopqrstuvwxyz", r"!@#$%^&*()\")"
+    nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", \
+                               "abcdefghijklmnopqrstuvwxyz", r"!@#$%^&*()\")"
     all_chars = nums + upper + lower + chrs
     while True:
         string = ''
-        string = string.join(random.choices(all_chars, k=length))
+        string = string.join(random.choices(all_chars, k = length))
         print(string)
         b_nums = False
         b_upper = False
