@@ -3,17 +3,11 @@ import clipboard
 
 
 def main(length: int):
-    """
-    this function takes no arguments and returns a "length" letter
-    password that fits most site requirements if need be you can replace
-    the vars nums, upper, lower and chrs with a *args method
-    """
     nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", \
-                               "abcdefghijklmnopqrstuvwxyz", r"!@#$%^&*()\")"
+                               "abcdefghijklmnopqrstuvwxyz", r" !@#$%^&*()\")"
     all_chars = nums + upper + lower + chrs
     while True:
-        string = ''
-        string = string.join(random.choices(all_chars, k = length))
+        string = ''.join(random.choices(all_chars, k=length))
         print(string)
         b_nums = False
         b_upper = False
