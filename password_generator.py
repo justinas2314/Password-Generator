@@ -4,7 +4,7 @@ import pyperclip
 
 def main(length: int):
     nums, upper, lower, chrs = "0123456789", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", \
-                               "abcdefghijklmnopqrstuvwxyz", r" !@#$%^&*()\")"
+                               "abcdefghijklmnopqrstuvwxyz", r" !@#$%^&*()\")[]{}"
     all_chars = nums + upper + lower + chrs
     while True:
         string = ''.join(random.choices(all_chars, k=length))
