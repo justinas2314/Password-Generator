@@ -1,5 +1,5 @@
 import random
-import clipboard
+import pyperclip
 
 
 def main(length: int):
@@ -23,7 +23,7 @@ def main(length: int):
             elif i in chrs:
                 b_chrs = True
             if all((b_nums, b_upper, b_lower, b_chrs)):
-                clipboard.copy(string)
+                pyperclip.copy(string)
                 return None
 
 
