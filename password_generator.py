@@ -12,9 +12,8 @@ def main(length: int):
                 set(upper) & string_as_set != {},
                 set(lower) & string_as_set != {},
                 set(chrs) & string_as_set != {})):
-            pyperclip.copy(string)
-            return
+            return string
 
 
 if __name__ == "__main__":
-    main(64)
+    pyperclip.copy(main(64))
