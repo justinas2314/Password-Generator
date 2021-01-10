@@ -8,10 +8,10 @@ def main(length: int):
     while True:
         string = ''.join(random.choices(nums + upper + lower + chrs, k=length))
         string_as_set = set(string)
-        if all((set(nums) & string_as_set != {},
-                set(upper) & string_as_set != {},
-                set(lower) & string_as_set != {},
-                set(chrs) & string_as_set != {})):
+        if all((len(set(nums) & string_as_set),
+                len(set(upper) & string_as_set),
+                len(set(lower) & string_as_set),
+                len(set(chrs) & string_as_set))):
             return string
 
 
